@@ -23,7 +23,7 @@ jobs:
         extensions: mbstring, xml
 
     - name: Instalar Dependencias de Composer
-      run: composer install --no-progress --pref-dist
+      run: composer install --no-progress --preferer-dist
 
     - name: Ejecutar Pruebas Unitarias (PHPUnit)
       run: ./vendor/bin/phpunit tests
